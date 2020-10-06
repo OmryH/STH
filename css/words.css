@@ -1,0 +1,10 @@
+.good {
+  color: chartreuse;
+}
+
+.bounce {
+  display: inline-block;
+  animation: 2s ease infinite;
+}
+
+/*# sourceMappingURL=words.css.map */

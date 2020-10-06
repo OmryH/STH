@@ -1,0 +1,30 @@
+@mixin animation-mixin($name, $attribute, $value1, $value2){
+  @keyframes #{$name} {
+    0% {#{$attribute}: $value1;}
+    50% {#{$attribute}: $value2;}
+    100% {#{$attribute}: $value1;}
+  }
+}
+
+@mixin transform-animate($name, $attribute, $value1, $value2){
+  @keyframes #{$name} {
+    @for $i from 1 through 3 {
+
+    }
+    0% {transform: #{$attribute}($value1);}
+    50% {transform: #{$attribute}($value2);}
+    100% {transform: #{$attribute}($value1);}
+  }
+}
+
+.good{
+  color: chartreuse;
+}
+
+.bounce{
+  display: inline-block;
+  animation: 2s ease infinite;
+}
+
+
+//@include transform-animate(bounce, translateY, -2px, 2px);

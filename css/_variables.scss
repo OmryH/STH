@@ -1,0 +1,10 @@
+$primaryFontFamily: "Yeon Sung";
+
+@mixin stat{
+  font-family: $primaryFontFamily, serif;
+  font-size: 15px;
+  position: relative;
+  left: 10px;
+  margin: 3px 0 3px 0;
+  width: 100%;
+}

@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.world {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.world .top {
+  height: 50%;
+}
+.world .top .story {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #6c757d;
+}
+.world .top .story .story-board {
+  font-family: "Yeon Sung", serif;
+  width: 40%;
+  height: 60%;
+  background-color: #007bff;
+}
+.world .top .story .story-board .content {
+  visibility: visible;
+  margin: 0 10px 0 5px;
+  height: 85%;
+  white-space: pre-line;
+  line-height: 1.4em;
+}
+.world .top .story .story-board .buttons {
+  background-color: lawngreen;
+  height: 20%;
+  display: flex;
+}
+.world .top .story .story-board .buttons .story-btn {
+  font-family: "Yeon Sung", serif;
+  visibility: visible;
+  margin: 6px auto;
+  background-color: #28a745;
+}
+.world .top .story .timer {
+  font-family: "Yeon Sung", serif;
+  width: 30%;
+  height: 60%;
+  background-color: khaki;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.world .top .story .timer .weeks, .world .top .story .timer .days, .world .top .story .timer .hours, .world .top .story .timer .minutes, .world .top .story .timer .seconds {
+  height: auto;
+  width: auto;
+  margin: 5px;
+}
+.world .top .story .combat {
+  width: 60%;
+  height: 60%;
+  background-color: oldlace;
+}
+.world .bottom {
+  height: 50%;
+  display: flex;
+}
+.world .bottom .character {
+  width: 40%;
+  height: 100%;
+  float: left;
+  display: flex;
+}
+.world .bottom .character .left-section {
+  width: 50%;
+  height: 100%;
+}
+.world .bottom .character .left-section .stats {
+  visibility: visible;
+  height: 60%;
+  border: 2px double;
+  border-bottom: 1px double;
+  border-radius: 10px;
+  background-color: #17a2b8;
+}
+.world .bottom .character .left-section .stats .stat {
+  font-family: "Yeon Sung", serif;
+  font-size: 15px;
+  position: relative;
+  left: 10px;
+  margin: 3px 0 3px 0;
+  width: 100%;
+}
+.world .bottom .character .left-section .artifacts {
+  height: 40%;
+  border: 2px double;
+  border-radius: 10px;
+  background-color: darkgreen;
+}
+.world .bottom .character .right-section {
+  width: 50%;
+  height: 100%;
+  border: 2px double;
+  border-radius: 10px;
+  background-color: maroon;
+}
+.world .bottom .map {
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/mapForTest.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
